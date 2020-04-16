@@ -1,0 +1,149 @@
+{
+  // ===
+  // Spacing
+  // ===
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  // ===
+  // Files
+  // ===
+  "files.exclude": {
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+  "files.associations": {
+    ".markdownlintrc": "jsonc"
+  },
+  // ===
+  // i18n
+  // ===
+  "i18n-ally.localesPaths": "src/locales",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.displayLanguage": "en",
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.keepFulfilled": true,
+  "i18n-ally.enabledParsers": "json",
+  // ===
+  // Colours for terminal and others
+  // ===
+  "workbench.colorCustomizations": {
+    "terminal.background": "#002B36",
+    "terminal.foreground": "#93A1A1",
+    "terminalCursor.background": "#93A1A1",
+    "terminalCursor.foreground": "#93A1A1",
+    "terminal.ansiBlack": "#002B36",
+    "terminal.ansiBlue": "#268BD2",
+    "terminal.ansiBrightBlack": "#657B83",
+    "terminal.ansiBrightBlue": "#268BD2",
+    "terminal.ansiBrightCyan": "#2AA198",
+    "terminal.ansiBrightGreen": "#859900",
+    "terminal.ansiBrightMagenta": "#6C71C4",
+    "terminal.ansiBrightRed": "#DC322F",
+    "terminal.ansiBrightWhite": "#FDF6E3",
+    "terminal.ansiBrightYellow": "#B58900",
+    "terminal.ansiCyan": "#2AA198",
+    "terminal.ansiGreen": "#859900",
+    "terminal.ansiMagenta": "#6C71C4",
+    "terminal.ansiRed": "#DC322F",
+    "terminal.ansiWhite": "#93A1A1",
+    "terminal.ansiYellow": "#B58900"
+  },
+  "terminal.integrated.cursorBlinking": true,
+  "workbench.editor.titleScrollbarSizing": "large",
+  "bracket-pair-colorizer-2.colors": [
+    "#333333",
+    "#f57c00",
+    "#9c27b0"
+  ],
+  // ===
+  // Spelling
+  // ===
+  "cSpell.words": [
+    "CLUBINFO",
+    "Serializers",
+    "csstype",
+    "signalr",
+    "skycourt",
+    "vuetify",
+    "vuex"
+  ],
+  // ===
+  // Formatting of code
+  // ===
+  "editor.formatOnPaste": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "json.format.enable": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.renderIndentGuides": false,
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "vetur.experimental.templateInterpolationService": true,
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatter.ts": "prettier-tslint",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    },
+    "vetur.grammar.customBlocks": {
+      "docs": "md",
+      "i18n": "json"
+    }
+  },
+  // ===
+  // HTML
+  // ===
+  "html.format.enable": false,
+  "vetur.validation.template": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+  "vetur.completion.tagCasing": "initial",
+  // ===
+  // CSS
+  // ===
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "vetur.validation.style": false,
+  // ===
+  // MARKDOWN
+  // ===
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  }
+}
