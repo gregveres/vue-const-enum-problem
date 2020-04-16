@@ -1,5 +1,5 @@
 declare namespace SkyCourtApi {
-  export enum SimpleEnum {
+  export const enum SimpleEnum {
     yes = 0,
     no = 1
   }
