@@ -24,8 +24,7 @@
       "jest",
       "vuetify",
       "webpack",
-      "webpack-env",
-      "SkyCourtApi"
+      "webpack-env"
     ],
     "paths": {
       "@/*": [

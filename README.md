@@ -5,6 +5,27 @@ of the enum every where an enum member is referenced.
 
 This isn't happening. Instead, the compiler is leaving the reference to the enum in the file and the browser is throwing a reference error on it.
 
+# Solution
+
+This has been solved. Many thanks to @pikax on the vue discord server for pointing me to [this github issue on vue](https://github.com/vuejs/vue-cli/issues/2132#issuecomment-431355597). The solution is to add this code to your webpack config:
+
+```bash
+chainWebpack: (config) => {
+    const rule = config.module.rule('ts');
+
+    rule.uses.delete('thread-loader');
+    rule
+      .use('ts-loader')
+      .loader('ts-loader')
+      .tap((options) => {
+        options.transpileOnly = false;
+        options.happyPackMode = false;
+
+        return options;
+      });
+  },
+```
+
 ## Project setup
 
 ```bash
